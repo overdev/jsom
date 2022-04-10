@@ -22,7 +22,9 @@
 # SOFTWARE.
 # ------------------------------------------------------------------------------
 
-from main import JSOM
+import main
+
+JSOM = main.JSOM
 
 __all__ = [
     'JSOM'

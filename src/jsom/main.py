@@ -46,10 +46,6 @@ __all__ = [
 
 # endregion (exports)
 # ---------------------------------------------------------
-# region CONSTANTS & ENUMS
-
-# endregion (constants)
-# ---------------------------------------------------------
 # region CLASSES
 
 
@@ -98,17 +94,4 @@ def _hook(pairs):
         obj[key] = value
     return obj
 
-
-def main() -> int:
-    return 0
-
-
 # endregion (functions)
-# ---------------------------------------------------------
-# region ENTRYPOINT
-
-
-if __name__ == '__main__':
-    sys.exit(main())
-
-# endregion (entrypoint)
