@@ -69,10 +69,10 @@ class JSOM(dict):
         with open(filename, 'r', encoding='utf-8') as file:
             return json.load(file, object_pairs_hook=_hook)
 
-    def __init__(self, m: Mapping, **kwargs):
+    def __init__(self, *m: Mapping, **kwargs):
         super().__init__(**kwargs)
-        if m:
-            super().update(m)
+        for _m in m:
+            super().update(_m)
 
     def __getattr__(self, key: Any) -> Any:
         if key in self:
