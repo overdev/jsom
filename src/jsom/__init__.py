@@ -21,3 +21,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 # ------------------------------------------------------------------------------
+
+from main import JSOM
+
+__all__ = [
+    'JSOM'
+]
